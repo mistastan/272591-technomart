@@ -9,38 +9,39 @@
             <div class="container">
                 <div class="top">
                     <div class="top-logo">
-                        <h1><a>Техномарт</a></h1>
+                        <a href="#"><img src="http://placehold.it/150x100" alt=""></a>
                     </div>
                     <div class="top-wrap">
                         <div class="top-search">
                             <form action="#" method="get">
                                 <input type="search" id="search" name="search" placeholder="Поиск:">
                                 <label for="search"></label>
+                                <button class="top-search-btn"><img src="http://placehold.it/50x50" alt=""></button>
                             </form>
                         </div>
                         <div class="top-link">
                             <a class="top-link-bookmark" href="#">Закладки: 0</a>
-                            <a class="top-link-basket" href="#">Корзина 0</a>
+                            <a class="top-link-basket" href="#">Корзина: 10</a>
                             <a class="top-link-order" href="#">Оформить заказ</a>
                         </div>
                     </div>
                 </div>
                 <div class="bottom">
-                    <div class="bottom-title">
-                        <span>Интернет-магазин строительных материалов и инструментов для ремонта</span>
-                    </div>
-                    <div class="bottom-data">
-                        <div class="bottom-data-phone">
-                            <span>+7(812)555-05-55</span>
-                        </div>
-                        <div class="bottom-data-adress">
-                            <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
-                        </div>
-                    </div>
+                    <p class="bottom-title">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+                    <p class="bottom-phone">+7(812)555-05-55</p>
+                    <p class="bottom-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
                     <div class="bottom-user">
-                        <a class="bottom-user-login" href="#">Войти</a>
-                        <a class="bottom-user-reg" href="#">Регистрация</a>
+                        <a class="bottom-user-profile" href="#">Рафшан Джамшутович</a>
+                        <a class="bottom-user-exit" href="#"><img src="http://placehold.it/50x50" alt=""></a>
                     </div>
+                    <ul class="bottom-list">
+                        <li class="bottom-item">
+                        <a class="bottom-link" href="#">Мои заказы</a>
+                        </li>
+                        <li class="bottom-item">
+                        <a class="bottom-link" href="#">Личный кабинет</a>
+                        </li>
+                    </ul>
                     <nav class="bottom-nav">
                         <ul class="bottom-nav-list">
                             <li class="bottom-nav-item">
@@ -71,65 +72,56 @@
         </header>
         
         <main class="container">
-            <div class="breadcrumbs">
-                <ul class="breadcrumbs-list">
-                    <li class="breadcrumbs-item">
-                    <a class="breadcrumbs-link" href="#">Главная</a>
-                    </li>
-                    <li class="breadcrumbs-item">
-                    <a class="breadcrumbs-link" href="#">Каталог</a>
-                    </li>
-                    <li class="breadcrumbs-item">
-                    <a class="breadcrumbs-link" href="#">Инструмент</a>
-                    </li>
-                    <li class="breadcrumbs-item">
-                    <a class="breadcrumbs-link" href="#">Перфораторы</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="title">
-                <h1>Перфораторы</h1>
-            </div>
-            <aside class="filter">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs-item">
+                <a class="breadcrumbs-link" href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs-item">
+                <a class="breadcrumbs-link" href="#">Каталог</a>
+                </li>
+                <li class="breadcrumbs-item">
+                <a class="breadcrumbs-link" href="#">Инструмент</a>
+                </li>
+                <li class="breadcrumbs-item">
+                <a class="breadcrumbs-link" href="#">Перфораторы</a>
+                </li>
+            </ul>
+            <h1>Перфораторы</h1>
+            <form action="#" method="post">
                 <span>Фильтр:</span>
-                <form action="#" method="post">
-                    <div class="price">
-                    <b>Цена:</b>
-                        <div class="price-scale">
-                        <div class="price-scale-lane">
-                        </div>
-                        </div>
-                        <div class="price-switch"></div>
-                        <div class="price-switch"></div>
-                        <div class="price-value">
-                        <input class="price-value-min" type="text" name="pricemin" value="0">
-                        <span>—</span>
-				        <input class="price-value-max" type="text" name="price-max" value="30000">
-                        </div>
+                <div class="price">
+                <b>Цена:</b>
+                    <div class="price-scale"></div>
+                    <div class="price-switch-left"></div>
+                    <div class="price-switch-right"></div>
+                    <div class="price-value">
+                    <input class="price-value-min" type="text" name="pricemin" value="0">
+                    <span>—</span>
+				    <input class="price-value-max" type="text" name="price-max" value="30000">
                     </div>
-                    <div class="brand">
-                    <b>Производители</b>
-                        <input class="brand-checkbox" type="checkbox" name="brand" id="bosch" checked>
-                        <label for="bosch">BOSCH</label>
-                        <input class="brand-checkbox" type="checkbox" name="brand" id="interskol">
-                        <label for="interskol">ИНТЕРСКОЛ</label>
-                        <input class="brand-checkbox" type="checkbox" name="brand" id="makita" checked>
-                        <label for="makita">MAKITA</label>
-                        <input class="brand-checkbox" type="checkbox" name="brand" id="dewalt">
-                        <label for="dewalt">DEWALT</label>
-                        <input class="brand-checkbox" type="checkbox" name="brand" id="hitachi">
-                        <label for="hitachi">HITACHI</label>
-                    </div>
-                    <div class="power">
-                    <b>Питание:</b>
-                        <input class="power-radio" type="radio" name="power" id="battery" value="1" checked>
-                        <label for="battery">Аккумуляторные</label>
-                        <input class="power-radio" type="radio" name="power" id="net" value="2">
-                        <label for="net">Сетевые</label>
-                    </div>
-                    <input class="filter-btn" type="submit" value="Показать">
-                </form>   
-            </aside>
+                </div>
+                <div class="brand">
+                <b>Производители</b>
+                    <input class="brand-checkbox" type="checkbox" name="brand" id="bosch" checked>
+                    <label for="bosch">BOSCH</label>
+                    <input class="brand-checkbox" type="checkbox" name="brand" id="interskol">
+                    <label for="interskol">ИНТЕРСКОЛ</label>
+                    <input class="brand-checkbox" type="checkbox" name="brand" id="makita" checked>
+                    <label for="makita">MAKITA</label>
+                    <input class="brand-checkbox" type="checkbox" name="brand" id="dewalt">
+                    <label for="dewalt">DEWALT</label>
+                    <input class="brand-checkbox" type="checkbox" name="brand" id="hitachi">
+                    <label for="hitachi">HITACHI</label>
+                </div>
+                <div class="power">
+                <b>Питание:</b>
+                    <input class="power-radio" type="radio" name="power" id="battery" value="1" checked>
+                    <label for="battery">Аккумуляторные</label>
+                    <input class="power-radio" type="radio" name="power" id="net" value="2">
+                    <label for="net">Сетевые</label>
+                </div>
+                <input class="filter-btn" type="submit" value="Показать">
+            </form>   
             <section class="features">
                 <div class="sorting">
                     <span>Сортировка:</span>
@@ -153,150 +145,94 @@
                 </div>
                 <article class="catalog">
                     <article class="catalog-item">
-                        <div class="catalog-item-action">
-                            <a class="catalog-item-action-buy" href="#">Купить</a>
-                            <a class="catalog-item-action-bookmark" href="#">В закладки</a>
-                        </div>
-                        <div class="catalog-item-img">
-                            <img src="http://placehold.it/150x100" alt="">
-                        </div>
-                        <div class="catalog-item-text">
-                            <span class="catalog-item-text-title">Перфоратор BOSCH BFG 3000</span>
-                            <span class="catalog-item-text-oldprice">22500 Р.</span>
-                            <a class="catalog-item-text-btn" href="#">15500 Р.</a>
-                        </div>
+                        <a class="catalog-item-buy" href="#">Купить</a>
+                        <a class="catalog-item-bookmark" href="#">В закладки</a>
+                        <img src="http://placehold.it/150x100" alt="">
+                        <span class="catalog-item-title">Перфоратор BOSCH BFG 3000</span>
+                        <span class="catalog-item-oldprice">22500 Р.</span>
+                        <a class="catalog-item-btn" href="#">15500 Р.</a>
                     </article>
                     <article class="catalog-item">
-                        <div class="catalog-item-action">
-                            <a class="catalog-item-action-buy" href="#">Купить</a>
-                            <a class="catalog-item-action-bookmark" href="#">В закладки</a>
-                        </div>
-                        <div class="catalog-item-img">
-                            <img src="http://placehold.it/150x100" alt="">
-                        </div>
-                        <div class="catalog-item-text">
-                            <span class="catalog-item-text-title">Перфоратор BOSCH BFG 6000</span>
-                            <span class="catalog-item-text-oldprice">30500 Р.</span>
-                            <a class="catalog-item-text-btn" href="#">25500 Р.</a>
-                        </div>
+                        <a class="catalog-item-buy" href="#">Купить</a>
+                        <a class="catalog-item-bookmark" href="#">В закладки</a>
+                        <img src="http://placehold.it/150x100" alt="">
+                        <span class="catalog-item-title">Перфоратор BOSCH BFG 6000</span>
+                        <span class="catalog-item-oldprice">30500 Р.</span>
+                        <a class="catalog-item-btn" href="#">25500 Р.</a>
+                    </article>
+                    <article class="catalog-item new">
+                        <a class="catalog-item-buy" href="#">Купить</a>
+                        <a class="catalog-item-bookmark" href="#">В закладки</a>
+                        <img src="http://placehold.it/150x100" alt="">
+                        <span class="catalog-item-title">Перфоратор BOSCH BFG 2000</span>
+                        <a class="catalog-item-btn" href="#">12500 Р.</a>
                     </article>
                     <article class="catalog-item">
-                        <div class="catalog-item-action">
-                            <a class="catalog-item-action-buy" href="#">Купить</a>
-                            <a class="catalog-item-action-bookmark" href="#">В закладки</a>
-                        </div>
-                        <div class="catalog-item-img">
-                            <img src="http://placehold.it/150x100" alt="">
-                        </div>
-                        <div class="catalog-item-text">
-                            <span class="catalog-item-text-title">Перфоратор BOSCH BFG 2000</span>
-                            <a class="catalog-item-text-btn" href="#">12500 Р.</a>
-                        </div>
+                        <a class="catalog-item-buy" href="#">Купить</a>
+                        <a class="catalog-item-bookmark" href="#">В закладки</a>
+                        <img src="http://placehold.it/150x100" alt="">
+                        <span class="catalog-item-title">Перфоратор BOSCH BFG 3000</span>
+                        <span class="catalog-item-oldprice">22500 Р.</span>
+                        <a class="catalog-item-btn" href="#">15500 Р.</a>
+                    </article>
+                    <article class="catalog-item new">
+                        <a class="catalog-item-buy" href="#">Купить</a>
+                        <a class="catalog-item-bookmark" href="#">В закладки</a>
+                        <img src="http://placehold.it/150x100" alt="">
+                        <span class="catalog-item-title">Перфоратор BOSCH BFG 6000</span>
+                        <span class="catalog-item-oldprice">30500 Р.</span>
+                        <a class="catalog-item-btn" href="#">25500 Р.</a>
                     </article>
                     <article class="catalog-item">
-                        <div class="catalog-item-action">
-                            <a class="catalog-item-action-buy" href="#">Купить</a>
-                            <a class="catalog-item-action-bookmark" href="#">В закладки</a>
-                        </div>
-                        <div class="catalog-item-img">
-                            <img src="http://placehold.it/150x100" alt="">
-                        </div>
-                        <div class="catalog-item-text">
-                            <span class="catalog-item-text-title">Перфоратор BOSCH BFG 3000</span>
-                            <span class="catalog-item-text-oldprice">22500 Р.</span>
-                            <a class="catalog-item-text-btn" href="#">15500 Р.</a>
-                        </div>
+                        <a class="catalog-item-buy" href="#">Купить</a>
+                        <a class="catalog-item-bookmark" href="#">В закладки</a>
+                        <img src="http://placehold.it/150x100" alt="">
+                        <span class="catalog-item-title">Перфоратор BOSCH BFG 2000</span>
+                        <a class="catalog-item-btn" href="#">12500 Р.</a>
+                    </article>
+                    <article class="catalog-item new">
+                        <a class="catalog-item-buy" href="#">Купить</a>
+                        <a class="catalog-item-bookmark" href="#">В закладки</a>
+                        <img src="http://placehold.it/150x100" alt="">
+                        <span class="catalog-item-title">Перфоратор BOSCH BFG 3000</span>
+                        <span class="catalog-item-oldprice">22500 Р.</span>
+                        <a class="catalog-item-btn" href="#">15500 Р.</a>
                     </article>
                     <article class="catalog-item">
-                        <div class="catalog-item-action">
-                            <a class="catalog-item-action-buy" href="#">Купить</a>
-                            <a class="catalog-item-action-bookmark" href="#">В закладки</a>
-                        </div>
-                        <div class="catalog-item-img">
-                            <img src="http://placehold.it/150x100" alt="">
-                        </div>
-                        <div class="catalog-item-text">
-                            <span class="catalog-item-text-title">Перфоратор BOSCH BFG 6000</span>
-                            <span class="catalog-item-text-oldprice">30500 Р.</span>
-                            <a class="catalog-item-text-btn" href="#">25500 Р.</a>
-                        </div>
+                        <a class="catalog-item-buy" href="#">Купить</a>
+                        <a class="catalog-item-bookmark" href="#">В закладки</a>
+                        <img src="http://placehold.it/150x100" alt="">
+                        <span class="catalog-item-title">Перфоратор BOSCH BFG 6000</span>
+                        <span class="catalog-item-oldprice">30500 Р.</span>
+                        <a class="catalog-item-btn" href="#">25500 Р.</a>
                     </article>
                     <article class="catalog-item">
-                        <div class="catalog-item-action">
-                            <a class="catalog-item-action-buy" href="#">Купить</a>
-                            <a class="catalog-item-action-bookmark" href="#">В закладки</a>
-                        </div>
-                        <div class="catalog-item-img">
-                            <img src="http://placehold.it/150x100" alt="">
-                        </div>
-                        <div class="catalog-item-text">
-                            <span class="catalog-item-text-title">Перфоратор BOSCH BFG 2000</span>
-                            <a class="catalog-item-text-btn" href="#">12500 Р.</a>
-                        </div>
-                    </article>
-                    <article class="catalog-item">
-                        <div class="catalog-item-action">
-                            <a class="catalog-item-action-buy" href="#">Купить</a>
-                            <a class="catalog-item-action-bookmark" href="#">В закладки</a>
-                        </div>
-                        <div class="catalog-item-img">
-                            <img src="http://placehold.it/150x100" alt="">
-                        </div>
-                        <div class="catalog-item-text">
-                            <span class="catalog-item-text-title">Перфоратор BOSCH BFG 3000</span>
-                            <span class="catalog-item-text-oldprice">22500 Р.</span>
-                            <a class="catalog-item-text-btn" href="#">15500 Р.</a>
-                        </div>
-                    </article>
-                    <article class="catalog-item">
-                        <div class="catalog-item-action">
-                            <a class="catalog-item-action-buy" href="#">Купить</a>
-                            <a class="catalog-item-action-bookmark" href="#">В закладки</a>
-                        </div>
-                        <div class="catalog-item-img">
-                            <img src="http://placehold.it/150x100" alt="">
-                        </div>
-                        <div class="catalog-item-text">
-                            <span class="catalog-item-text-title">Перфоратор BOSCH BFG 6000</span>
-                            <span class="catalog-item-text-oldprice">30500 Р.</span>
-                            <a class="catalog-item-text-btn" href="#">25500 Р.</a>
-                        </div>
-                    </article>
-                    <article class="catalog-item">
-                        <div class="catalog-item-action">
-                            <a class="catalog-item-action-buy" href="#">Купить</a>
-                            <a class="catalog-item-action-bookmark" href="#">В закладки</a>
-                        </div>
-                        <div class="catalog-item-img">
-                            <img src="http://placehold.it/150x100" alt="">
-                        </div>
-                        <div class="catalog-item-text">
-                            <span class="catalog-item-text-title">Перфоратор BOSCH BFG 2000</span>
-                            <a class="catalog-item-text-btn" href="#">12500 Р.</a>
-                        </div>
+                        <a class="catalog-item-buy" href="#">Купить</a>
+                        <a class="catalog-item-bookmark" href="#">В закладки</a>
+                        <img src="http://placehold.it/150x100" alt="">
+                        <span class="catalog-item-title">Перфоратор BOSCH BFG 2000</span>
+                        <a class="catalog-item-btn" href="#">12500 Р.</a>
                     </article>
                 </article>
-                <div class="page">
-                    <ul class="page-list">
-                        <li class="page-item">
-                        <a class="page-link" href="#">1</a>
-                        </li>
-                        <li class="page-item">
-                        <a class="page-link" href="#">2</a>
-                        </li>
-                        <li class="page-item">
-                        <a class="page-link" href="#">3</a>
-                        </li>
-                        <li class="page-item">
-                        <a class="page-link" href="#">Следующая</a>
-                        </li>
-                    </ul>
-                </div>
+                <ul class="paginator">
+                    <li class="paginator-item">
+                    <a class="paginator-link" href="#">1</a>
+                    </li>
+                    <li class="paginator-item">
+                    <a class="paginator-link" href="#">2</a>
+                    </li>
+                    <li class="paginator-item">
+                    <a class="paginator-link" href="#">3</a>
+                    </li>
+                    <li class="paginator-item">
+                    <a class="paginator-link" href="#">Следующая</a>
+                    </li>
+                </ul>
                 <div class="info">
-                    <b>Пара слов о перфораторах</b>
-                    <span>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
-                    Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
-                    </span>
+                    <h2>Пара слов о перфораторах</h2>
+                    <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.</p>
+                    <p>Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+                    </p>
                 </div>
             </section>
         </main>
