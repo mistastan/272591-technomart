@@ -9,9 +9,9 @@
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
     <body>
-        <header class="main-header container">
-            <div class="container">
-                <div class="top clearfix">
+        <header class="main-header">
+            <div class="top clearfix">
+                <div class="container">
                     <div class="top-logo">
                         <a href="index.html"></a>
                     </div>
@@ -23,7 +23,7 @@
                                 <button class="top-search-btn"></button>
                             </form>
                         </div>
-                        <div class="top-link">
+                        <div class="top-link main-top-link">
                             <ul class="top-link-list">
                                 <li class="top-link-item"><a class="top-link-bookmark" href="#">Закладки: 0</a>
                                 <li class="top-link-item"><a class="top-link-basket" href="#">Корзина: 0</a>
@@ -32,13 +32,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="bottom clearfix">
+            </div>
+            <div class="bottom clearfix">
+                <div class="container">
                     <div class="bottom-title">
                         <span>Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</span>
                     </div>
                     <div class="bottom-data">
                         <div class="bottom-data-phone">
-                            <span>+7(812)555-05-55</span>
+                            <span>+7 (812) 555-05-55</span>
                         </div>
                         <div class="bottom-data-adress">
                             <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
@@ -70,7 +72,7 @@
             </div>
         </header>
         
-        <main class="container">
+        <main>
             <section class="box container clearfix">
                 <article class="item item-materials">
                     <div class="new"></div>
@@ -100,7 +102,7 @@
                         <div class="sliders-item">
                             <b>Перфораторы</b>
                             <span>Настоящие мужские игрушки</span>
-                            <a class="sliders-item-btn" href="#">Открыть каталог</a>
+                            <a class="sliders-item-btn" href="catalog.html">Открыть каталог</a>
                         </div>
                         <div class="sliders-item">
                             <b>Дрели</b>
@@ -117,7 +119,7 @@
                 </article>
                 <div class="product">
                     <span>Популярные товары:</span>
-                    <a class="product-btn" href="#">Все популярные товары</a>
+                    <a class="product-btn" href="catalog.html">Все популярные товары</a>
                 </div>
                 <article class="catalog catalog-main">
                     <article class="catalog-item">
@@ -144,7 +146,8 @@
                         <span class="catalog-item-oldprice">30500 Р.</span>
                         <a class="catalog-item-btn" href="#">25500 Р.</a>
                     </article>
-                    <article class="catalog-item new">
+                    <article class="catalog-item">
+                        <div class="new"></div>
                         <a class="catalog-item-buy" href="#">Купить</a>
                         <a class="catalog-item-bookmark" href="#">В закладки</a>
                         <img src="img/drill-2000.jpg" width="127" height="112" alt="BFG 2000">
@@ -154,7 +157,7 @@
                 </article>
                 <div class="makers">
                     <span>Популярные производители:</span>
-                    <a class="makers-btn" href="#">Все производители</a>
+                    <a class="makers-btn" href="catalog.html">Все производители</a>
                 </div>
                 <article class="brand">
                     <a href="#">
@@ -183,38 +186,48 @@
                     </a>
                 </article>
             </section>
-            <section class="box-2 container">
-                <article class="service clearfix">
+            <section class="service clearfix">
+                <div class="container">
                     <h3 class="service-title">Сервисы</h3>
                     <p class="service-info">Хороший интернет-магазин отличается от плохого не только ценами!<br> Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
                     <div class="service-select">
-                        <ul class="service-select-list">
-                            <li class="service-select-item"><a class="service-select-link active" href="#">Доставка</a>
-                            <li class="service-select-item"><a class="service-select-link" href="#">Гарантия</a>
-                            <li class="service-select-item"><a class="service-select-link" href="#">Кредит</a>
-                        </ul>
-                    <div class="service-select-desc">
-                        <div class="service-select-desc-delivery">
-                            <h2>Доставка</h2>
-                            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!<br> Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
+                        <input type="radio" id="btn-4" name="select" checked>
+                        <input type="radio" id="btn-5" name="select">
+                        <input type="radio" id="btn-6" name="select">
+                        <div class="service-select-item">
+                            <label for="btn-4">Доставка</label>
+                            <label for="btn-5">Гарантия</label>
+                            <label for="btn-6">Кредит</label>
                         </div>
-                        <div class="service-select-desc-garanty">
-                            <h2>Гарантия</h2>
-                            <p>Если купленный у нас товар поломается или заискрит, 
-                            а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. 
-                            Дом уж восстановите как-нибудь сами.</p>
-                        </div>
-                        <div class="service-select-desc-credit">
-                            <h2>Кредит</h2>
-                            <p>Залезть в долговую яму стало проще! 
-                            Кредитные консультанты придут вам на помощь.</p>
+                        <div class="service-desc">
+                            <div class="service-desc-slide">
+                                <div class="service-desc-slide-text">
+                                    <h2>Доставка</h2>
+                                    <p>Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно!<br> Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
+                                </div>
+                            </div>
+                            <div class="service-desc-slide">
+                                <div class="service-desc-slide-text">
+                                    <h2>Гарантия</h2>
+                                    <p>Если купленный у нас товар поломается или заискрит,<br> 
+                                    а также в случае пожара, спровоцированного его возгаранием,<br>  вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br> сгоревший товар на новый.<br> 
+                                    Дом уж восстановите как-нибудь сами.</p>
+                                </div>
+                            </div>
+                            <div class="service-desc-slide">
+                                <div class="service-desc-slide-text">
+                                    <h2>Кредит</h2>
+                                    <p>Залезть в долговую яму стало проще!<br> 
+                                    Кредитные консультанты придут вам на помощь.</p>
+                                    <a class="service-desc-slide-btn" href="#">Отправить заявку</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    </div>
-                </article>
+                </div>
             </section>
-            <section class="box-3 container">
-                <article class="about clearfix">
+            <section class="about clearfix">
+                <div class="container">
                     <div class="about-text">
                         <h3>Компания «Техномарт»</h3>
                         <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкномить на гастарбайтерах.</p>
@@ -235,16 +248,16 @@
                         <a class="about-contact-map" href="#"><img src="img/map.jpg" width="300" height="158" alt="Карта"></a>
                         <a class="about-contact-btn" href="#">Заблудились? Напишите нам!</a>
                     </div>
-                </article>
+                </div>
             </section>
         </main>
         
-        <footer class="main-footer container">
-            <div class="container">
-                <article class="up clearfix">
+        <footer class="main-footer">
+            <article class="up clearfix">
+                <div class="container">
                     <div class="up-left">
                         <div class="up-logo">
-                            <img src="img/%D0%A2%D0%95%D0%A5%D0%9D%D0%9E%D0%9C%D0%90%D0%A0%D0%A2%20bottom.png" width="220" height="68" alt="Техномарт">
+                            <a href="#"><img src="img/%D0%A2%D0%95%D0%A5%D0%9D%D0%9E%D0%9C%D0%90%D0%A0%D0%A2%20bottom.png" width="220" height="68" alt="Техномарт"></a>
                         </div>
                         <div class="up-adress">
                             <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
@@ -270,8 +283,10 @@
                             </ul>
                         </nav>
                     </div>
-                </article>
-                <article class="down clearfix">
+                </div>
+            </article>
+            <article class="down clearfix">
+                <div class="container">
                     <div class="down-copyright">
                         <span>© 2010-2016 Компания «Техномарт»<br>
                         Все права защищены
@@ -292,8 +307,46 @@
                         <a href="https://htmlacademy.ru">htmlacademy.ru</a>
                         </span>
                     </div>
-                </article>
-            </div>
+                </div>
+            </article>
         </footer>
+        
+        <div class="modal-content">
+            <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+            <form class="feedback-form" action="#" method="post">
+                <label class="feedback-form-name">
+                    <span>Ваше имя:</span>
+                    <input type="text" name="feedback-name" placeholder="Представьтесь, пожалуйста">
+                </label>
+                <label class="feedback-form-mail">
+                    <span>Ваш e-mail:</span>
+                    <input type="text" name="feddback-mail" placeholder="Для отправки ответа">
+                </label>
+                <label class="feedback-form-text">
+                    <span>Текст письма:</span>
+                    <textarea name="feedback-text" placeholder="В свободной форме"></textarea>
+                </label>
+                <div class="feedback-form-bottom">
+                    <button class="feedback-form-send" type="button" title="Отправить">Отправить</button>
+                </div>
+            </form>
+        </div>
+        <div class="modal-content-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651595!2d30.320894616394252!3d59.93879418187624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1487335279421" width="940" height="446" style="border:0" allowfullscreen></iframe>
+            <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+        </div>
+        <div class="modal-overlay"></div>
+        
+        <div class="modal-content-buy">
+            <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+            <h1 class="modal-content-title">Товар добавлен в корзину!</h1>
+            <div class="modal-content-bottom">
+                <a class="modal-content-order" href="#">Оформить заказ</a>
+                <button class="modal-content-continue" type="button" title="Продолжить покупки">Продолжить покупки</button>
+            </div>
+        </div>
+        
+        <script src="js/about&map.js"></script>
+        <script src="js/catalog-buy.js"></script>
     </body>
 </html>
