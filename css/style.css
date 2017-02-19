@@ -6,22 +6,6 @@ body, html {
     font-family: "PT Sans","Arial",sans-serif;
     color: #000;
 }
-h1, h3 {
-    font-size: 30px;
-    line-height: 24px;
-    font-weight: bold;
-    font-style: normal;
-    font-family: "Cuprum","Arial",sans-serif;
-    color: #000;
-}
-h2 {
-    font-size: 36px;
-    line-height: 24px;
-    font-weight: bold;
-    font-style: normal;
-    font-family: "Cuprum","Arial",sans-serif;
-    color: #32425c;
-}
 .clearfix::after {
     content: "";
     display: table;
@@ -420,14 +404,15 @@ h2 {
 .bottom-nav {
     float: left;
     width: 100%;
-    height: 60px;
-    margin-bottom: 60px;
+    height: 54px;
+    margin-bottom: 61px;
     background-color: #32425c;
+    border-bottom: 5px solid #293449;
 }
 .bottom-nav-list {
+    position: absolute;
     margin: 0;
     padding: 0;
-    border-bottom: 5px solid #293449;
     list-style: none;
 }
 .bottom-nav-item {
@@ -542,6 +527,8 @@ h2 {
 .catalog-title h1 {
     padding-top: 25px;
     padding-bottom: 30px;
+    font-family: "Cuprum","Arial",sans-serif;
+    font-size: 30px;
     line-height: 30px;
     font-weight: normal;
     text-indent: 27px;
@@ -1434,8 +1421,12 @@ h2 {
     width: 100%;
     margin-top: 67px;
     margin-bottom: 27px;
+    font-family: "Cuprum","Arial",sans-serif;
+    font-size: 30px;
+    line-height: 24px;
     font-weight: normal;
     text-transform: uppercase;
+    color: #000000;
 }
 .service-info {
     float: left;
@@ -1503,8 +1494,12 @@ h2 {
     height: 291px;
 }
 .service-desc-slide-text h2 {
+    font-family: "Cuprum","Arial",sans-serif;
+    font-size: 36px;
+    line-height: 24px;
     font-weight: normal;
     text-transform: uppercase;
+    color: #32425c;
 }
 .service-desc-slide {
     display: none;
@@ -1578,8 +1573,12 @@ h2 {
     top: 78px;
     margin: 0;
     padding: 0;
+    font-family: "Cuprum","Arial",sans-serif;
+    font-size: 30px;
+    line-height: 24px;
     font-weight: normal;
     text-transform: uppercase;
+    color: #000000;
 }
 .about-text p {
     position: relative;
@@ -1641,8 +1640,12 @@ h2 {
     right: 660px;
     margin: 0;
     padding: 0;
+    font-family: "Cuprum","Arial",sans-serif;
+    font-size: 30px;
+    line-height: 24px;
     font-weight: normal;
     text-transform: uppercase;
+    color: #000000;
 }
 .about-contact p {
     position: relative;
@@ -1683,8 +1686,12 @@ h2 {
     background-color: #f2f6f8;
 }
 .info h3 {
+    font-family: "Cuprum","Arial",sans-serif;
+    font-size: 30px;
+    line-height: 24px;
     font-weight: normal;
     text-transform: uppercase;
+    color: #000000;
 }
 .up {
     width: 100%;
@@ -1704,13 +1711,16 @@ h2 {
     font-size: 18px;
     color: #f1f5f7;
 }
-.up-right {
-    float: right;
-}
 .up-nav-1-list {
+    position: absolute;
+    top: 2849px;
+    left: 839px;
     padding: 0;
     margin: 0;
     list-style: none;
+}
+.second-nav .up-nav-1-list {
+    top: 1949px;
 }
 .up-nav-1-item {
     display: inline-block;
@@ -1718,16 +1728,17 @@ h2 {
     font-family: "Cuprum","Arial",sans-serif;
     font-size: 18px;
 }
+.up-nav-1-item:last-child .up-nav-1-link {
+    padding-right: 0;
+}
 .up-nav-1-link {
     display: block;
-    padding: 0px 30px;
-    padding-top: 40px;
+    padding-left: 35px;
+    padding-right: 25px;
+    padding-top: 39px;
     padding-bottom: 9px;
     text-decoration: none;
     color: #f1f5f7;
-}
-.up-nav-1-item:last-child .up-nav-1-link {
-    padding-right: 0;
 }
 .up-nav-1-link:hover {
     text-decoration: underline;
@@ -1737,9 +1748,15 @@ h2 {
     opacity: 0.502;
 }
 .up-nav-2-list {
+    position: absolute;
+    top: 2923px;
+    left: 840px;
     padding-right: 0;
     margin: 0;
     list-style: none;
+}
+.second-nav .up-nav-2-list {
+    top: 2023px;
 }
 .up-nav-2-item {
     display: inline-block;
@@ -1749,23 +1766,16 @@ h2 {
 }
 .up-nav-2-link {
     display: block;
-    padding: 0px 28px;
-    padding-top: 25px;
+    padding-left: 19px;
+    padding-right: 40px;
+    padding-top: 23px;
     padding-bottom: 10px;
     text-decoration: none;
     color: #ffd180;
 }
-.up-nav-2-item:nth-child(1) .up-nav-2-link {
-    padding-left: 17px;
-}
-.up-nav-2-item:nth-child(2) .up-nav-2-link {
-    padding-left: 32px;
-}
-.up-nav-2-item:nth-child(3) .up-nav-2-link {
-    padding-left: 32px;
-}
 .up-nav-2-item:last-child .up-nav-2-link {
     padding-right: 0;
+    margin-right: 0;
 }
 .up-nav-2-link:hover {
     text-decoration: underline;
@@ -2003,8 +2013,12 @@ h2 {
     position: absolute;
     top: 51px;
     left: 178px;
-    line-height: 018px;
+    font-family: "Cuprum","Arial",sans-serif;
+    font-size: 30px;
+    line-height: 18px;
     font-weight: normal;
+    font-style: normal;
+    color: #000000;
 }
 .modal-content-title::before {
     content: "";
