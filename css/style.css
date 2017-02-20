@@ -70,7 +70,7 @@ body, html {
     left: 16px;
     width: 18px;
     height: 18px;
-    background: url(../img/spritesheet-icons.png) -90px -85px no-repeat;
+    background: url("../img/spritesheet-icons.png") -90px -85px no-repeat;
     opacity: 0.5;
 }
 .top-search-btn {
@@ -81,7 +81,7 @@ body, html {
     height: 18px;
     z-index: 99;
     border: none;
-    background: url(../img/spritesheet-icons.png) -90px -85px no-repeat;
+    background: url("../img/spritesheet-icons.png") -90px -85px no-repeat;
     opacity: 0;
 }
 .top-search input:-moz-placeholder {
@@ -99,12 +99,12 @@ body, html {
 .top-search:hover label {
     opacity: 1;
 }
-.top-search input:focus {
+.top-search .top-search-field:focus {
     background-color: #ffffff;
     color: #000000;
 }
-.top-search input:focus+label {
-    background: url(../img/spritesheet-icons.png) -63px -85px no-repeat;
+.top-search-field:focus + label {
+    background: url("../img/spritesheet-icons.png") -63px -85px no-repeat;
 }
 .top-link {
     float: right;
@@ -313,10 +313,10 @@ body, html {
 .bottom-user-profile:hover::before {
     opacity: 1;
 }
-.bottom-user-profile:hover+.bottom-user-logout {
+.bottom-user-profile:hover + .bottom-user-logout {
     opacity: 1;
 }
-.bottom-user-profile:active+.bottom-user-logout {
+.bottom-user-profile:active + .bottom-user-logout {
     opacity: 0.3;
 }
 .bottom-user-profile:active  {
@@ -504,7 +504,7 @@ body, html {
     width: 16px;
     height: 17px;
     font-size: 0px;
-    background-image: url(../img/.icon-home.png);
+    background-image: url("../img/.icon-home.png");
     background-repeat: no-repeat;
 }
 .breadcrumbs-item:nth-child(1) .breadcrumbs-link::after {
@@ -514,7 +514,7 @@ body, html {
     left: 29px;
     width: 8px;
     height: 13px;
-    background: url(../img/.breadcrumbs-right.png) no-repeat transparent;   
+    background: url("../img/.breadcrumbs-right.png") no-repeat transparent;   
 }
 .breadcrumbs-item:nth-child(2) .breadcrumbs-link::after {
     content: "";
@@ -523,7 +523,7 @@ body, html {
     left: 122px;
     width: 8px;
     height: 13px;
-    background: url(../img/.breadcrumbs-right.png) no-repeat transparent;   
+    background: url("../img/.breadcrumbs-right.png") no-repeat transparent;   
 }
 .breadcrumbs-item:nth-child(3) .breadcrumbs-link::after {
     content: "";
@@ -532,7 +532,7 @@ body, html {
     left: 244px;
     width: 8px;
     height: 13px;
-    background: url(../img/.breadcrumbs-right.png) no-repeat transparent;   
+    background: url("../img/.breadcrumbs-right.png") no-repeat transparent;   
 }
 .catalog-title {
     width: 100%;
@@ -698,7 +698,7 @@ body, html {
     left: -30px;
     width: 27px;
     height: 25px;
-    background: url(../img/spritesheet-form.png) no-repeat;
+    background: url("../img/spritesheet-form.png") no-repeat;
     cursor: pointer;
     opacity: 0.7;
 }
@@ -749,7 +749,7 @@ body, html {
     left: -30px;
     width: 27px;
     height: 25px;
-    background: url(../img/spritesheet-form.png) no-repeat;
+    background: url("../img/spritesheet-form.png") no-repeat;
     cursor: pointer;
     opacity: 0.7;
 }
@@ -1044,7 +1044,7 @@ body, html {
 .sliders-item:nth-child(1) {
     position: absolute;
     top: 0px;
-    background-image: url(../img/rock-drill.jpg);
+    background-image: url("../img/rock-drill.jpg");
     background-repeat: no-repeat;
     width: 620px;
     height: 266px;
@@ -1052,7 +1052,7 @@ body, html {
 .sliders-item:nth-child(2) {
     position: absolute;
     top: 0px;
-    background-image: url(../img/drill.jpg);
+    background-image: url("../img/drill.jpg");
     background-repeat: no-repeat;
     width: 620px;
     height: 266px;
@@ -1072,7 +1072,7 @@ body, html {
     left: 24px;
     width: 22px;
     height: 40px;
-    background: url(../img/.icon-left.png) no-repeat transparent;
+    background: url("../img/.icon-left.png") no-repeat transparent;
     border: none;
 }
 .slider-btn-next {
@@ -1081,7 +1081,7 @@ body, html {
     left: 577px;
     width: 22px;
     height: 40px;
-    background: url(../img/.icon-right.png) no-repeat transparent;
+    background: url("../img/.icon-right.png") no-repeat transparent;
     border: none;
 }
 .product {
@@ -1177,16 +1177,16 @@ body, html {
 .catalog-item:nth-child(3n) img {
     left: 32px;
 }
-.catalog-main .catalog-item:first-child img {
+.catalog-main-item:first-child img {
     left: 17px;
 }
-.catalog-main .catalog-item:nth-child(2) img {
+.catalog-main-item:nth-child(2) img {
     left: 39px;
 }
-.catalog-main .catalog-item:nth-child(3) img {
+.catalog-main-item:nth-child(3) img {
     left: 29px;
 }
-.catalog-main .catalog-item:nth-child(4) img {
+.catalog-main-item:nth-child(4) img {
     left: 35px;
 }
 .catalog-item-buy {
@@ -1256,9 +1256,9 @@ body, html {
 }
 .catalog-item-btn {
     display: inline-block;
-    position: relative;
-    top: -12px;
-    left: 43px;
+    position: absolute;
+    top: 257px;
+    left: 44px;
     padding: 8px 0px;
     padding-left: 35px;
     vertical-align: middle;
@@ -1269,26 +1269,10 @@ body, html {
     text-decoration: none;
     color: #ffffff;
 }
-.catalog-main .catalog-item:nth-child(4) .catalog-item-btn {
-    top: 11px;
-    left: 45px;
-}
-.catalog-item:last-child .catalog-item-btn {
-    top: 16px;
-}
-.catalog-second .catalog-item:nth-child(3) .catalog-item-btn {
-    top: 11px;
-}
-.catalog-second .catalog-item:nth-child(6) .catalog-item-btn {
-    top: 11px;
-}
-.catalog-second .catalog-item:nth-child(9) .catalog-item-btn {
-    top: 11px;
-}
 .catalog-item-oldprice {
     display: inline-block;
-    position: relative;
-    top: -16px;
+    position: absolute;
+    top: 228px;
     left: 77px;
     font-size: 17px;
     vertical-align: baseline;
@@ -1300,9 +1284,9 @@ body, html {
 .catalog-item-title {
     display: inline-block;
     width: 180px;
-    position: relative;
-    top: -20px;
-    left: 18px;
+    position: absolute;
+    top: 178px;
+    left: 21px;
     font-size: 18px;
     vertical-align: baseline;
     line-height: 20px;
@@ -1310,26 +1294,6 @@ body, html {
     text-align: center;
     overflow:inherit;
     color: #000000;
-}
-.catalog-second .catalog-item:nth-child(3n) .catalog-item-title {
-    top: -17px;
-    left: 20px;
-}
-.catalog-second .catalog-item:nth-child(2) .catalog-item-title {
-    top: -17px;
-    left: 20px;
-}
-.catalog-second .catalog-item:nth-child(9) .catalog-item-title {
-    top: -19px;
-    left: 20px;
-}
-.catalog-main .catalog-item:nth-child(3) .catalog-item-title {
-    top: -18px;
-    left: 21px;
-}
-.catalog-main .catalog-item:nth-child(4) .catalog-item-title {
-    top: -18px;
-    left: 21px;
 }
 .catalog-item:last-child {
     margin-right: 0;
@@ -1510,7 +1474,7 @@ body, html {
     left: 230px;
     width: 10px;
     height: 272px;
-    background: url(../img/shadow.png) no-repeat;
+    background: url("../img/shadow.png") no-repeat;
 }
 .service-select-item label {
     display: block;
@@ -1559,17 +1523,17 @@ body, html {
     display: none;
 }
 .service-desc-slide:nth-child(1) {
-    background-image: url(../img/truck.png);
+    background-image: url("../img/truck.png");
     background-repeat: no-repeat;
     background-position: bottom -20px right;
 }
 .service-desc-slide:nth-child(2) {
-    background-image: url(../img/garanty.png);
+    background-image: url("../img/garanty.png");
     background-repeat: no-repeat;
     background-position: bottom -20px right;
 }
 .service-desc-slide:nth-child(3) {
-    background-image: url(../img/credit.png);
+    background-image: url("../img/credit.png");
     background-repeat: no-repeat;
     background-position: bottom -20px right;
 }
@@ -1865,7 +1829,7 @@ body, html {
     font-size: 0;
     vertical-align: top;
     text-decoration: none;
-    background-image: url(../img/spritesheet_social.png);
+    background-image: url("../img/spritesheet_social.png");
     background-repeat: no-repeat;
     background-position: center;
     background-color: #212a3a;
@@ -1948,7 +1912,7 @@ body, html {
     width: 21px;
     height: 21px;
     font-size: 0;
-    background: url(../img/Red-cross.png) no-repeat transparent; 
+    background: url("../img/Red-cross.png") no-repeat transparent; 
     border: none;
     cursor: pointer;
 }
@@ -2043,7 +2007,7 @@ body, html {
     width: 940px;
     height: 446px;
     box-shadow: 0px 5px 30px 3px #000000;
-    background-image: url(../img/map-full.jpg) no-repeat;
+    background-image: url("../img/map-full.jpg");
 }
 .modal-content-map .modal-content-close {
     left: 950px;
@@ -2080,7 +2044,7 @@ body, html {
     left: -100px;
     width: 66px;
     height: 66px;
-    background: url("../img/Success.png")
+    background: url("../img/success.png")
 }
 .modal-content-bottom {
     position: absolute;

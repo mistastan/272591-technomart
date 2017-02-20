@@ -1,4 +1,31 @@
            
+            var el = document.querySelectorAll("article .catalog-item-buy");
+            var show = document.querySelector(".modal-content-buy");
+            var close = show.querySelector(".modal-content-close");
+            var goOn = show.querySelector(".modal-content-continue");
+            var overlay = document.querySelector(".modal-overlay");
+            
+            for (var i = 0; i < el.length; i++) {
+                 
+                    el[i].addEventListener("click", function(zz) {
+                        zz.preventDefault();
+                        show.classList.add("modal-content-buy-show");
+                        overlay.classList.add("modal-overlay-show");
+                    });
+                
+            };
+            close.addEventListener("click", function(event) {
+                event.preventDefault();
+                show.classList.remove("modal-content-buy-show");
+                overlay.classList.remove("modal-overlay-show");
+            });
+            
+            goOn.addEventListener("click", function(event) {
+                event.preventDefault();
+                show.classList.remove("modal-content-buy-show");
+                overlay.classList.remove("modal-overlay-show");
+            });
+
             var link = document.querySelector(".about-contact-btn");
             
             var popup = document.querySelector(".modal-content");
@@ -47,239 +74,16 @@
             var overlay = document.querySelector(".modal-overlay");
             var mapClose = mapPopup.querySelector(".modal-content-close");
             
-            mapOpen.addEventListener("click", function(event) {
-                event.preventDefault();
+            mapOpen.addEventListener("click", function(mapevent) {
+                mapevent.preventDefault();
                 mapPopup.classList.add("modal-content-map-show");
                 overlay.classList.add("modal-overlay-show");
             });
 
-            mapClose.addEventListener("click", function(event) {
-                event.preventDefault();
+            mapClose.addEventListener("click", function(mapevent) {
+                mapevent.preventDefault();
                 mapPopup.classList.remove("modal-content-map-show");
                 overlay.classList.remove("modal-overlay-show");
             });
             
-            var el = document.querySelectorAll(".catalog-item-buy")[0];
             
-            var show = document.querySelector(".modal-content-buy");
-            var close = show.querySelector(".modal-content-close");
-            var goOn = show.querySelector(".modal-content-continue");
-            var overlay = document.querySelector(".modal-overlay");
-            
-            el.addEventListener("click", function(event) {
-                event.preventDefault();
-                show.classList.add("modal-content-buy-show");
-                overlay.classList.add("modal-overlay-show");
-            });
-            
-            close.addEventListener("click", function(event) {
-                event.preventDefault();
-                show.classList.remove("modal-content-buy-show");
-                overlay.classList.remove("modal-overlay-show");
-            });
-            
-            goOn.addEventListener("click", function(event) {
-                event.preventDefault();
-                show.classList.remove("modal-content-buy-show");
-                overlay.classList.remove("modal-overlay-show");
-            });
-
-            var el = document.querySelectorAll(".catalog-item-buy")[1];
-            
-            var show = document.querySelector(".modal-content-buy");
-            var close = show.querySelector(".modal-content-close");
-            var goOn = show.querySelector(".modal-content-continue");
-            var overlay = document.querySelector(".modal-overlay");
-            
-            el.addEventListener("click", function(event) {
-                event.preventDefault();
-                show.classList.add("modal-content-buy-show");
-                overlay.classList.add("modal-overlay-show");
-            });
-            
-            close.addEventListener("click", function(event) {
-                event.preventDefault();
-                show.classList.remove("modal-content-buy-show");
-                overlay.classList.remove("modal-overlay-show");
-            });
-            
-            goOn.addEventListener("click", function(event) {
-                event.preventDefault();
-                show.classList.remove("modal-content-buy-show");
-                overlay.classList.remove("modal-overlay-show");
-            });
-
-            var el = document.querySelectorAll(".catalog-item-buy")[2];
-            
-            var show = document.querySelector(".modal-content-buy");
-            var close = show.querySelector(".modal-content-close");
-            var goOn = show.querySelector(".modal-content-continue");
-            var overlay = document.querySelector(".modal-overlay");
-            
-            el.addEventListener("click", function(event) {
-                event.preventDefault();
-                show.classList.add("modal-content-buy-show");
-                overlay.classList.add("modal-overlay-show");
-            });
-            
-            close.addEventListener("click", function(event) {
-                event.preventDefault();
-                show.classList.remove("modal-content-buy-show");
-                overlay.classList.remove("modal-overlay-show");
-            });
-            
-            goOn.addEventListener("click", function(event) {
-                event.preventDefault();
-                show.classList.remove("modal-content-buy-show");
-                overlay.classList.remove("modal-overlay-show");
-            });
-
-            var el = document.querySelectorAll(".catalog-item-buy")[3];
-            
-            var show = document.querySelector(".modal-content-buy");
-            var close = show.querySelector(".modal-content-close");
-            var goOn = show.querySelector(".modal-content-continue");
-            var overlay = document.querySelector(".modal-overlay");
-            
-            el.addEventListener("click", function(event) {
-                event.preventDefault();
-                show.classList.add("modal-content-buy-show");
-                overlay.classList.add("modal-overlay-show");
-            });
-            
-            close.addEventListener("click", function(event) {
-                event.preventDefault();
-                show.classList.remove("modal-content-buy-show");
-                overlay.classList.remove("modal-overlay-show");
-            });
-            
-            goOn.addEventListener("click", function(event) {
-                event.preventDefault();
-                show.classList.remove("modal-content-buy-show");
-                overlay.classList.remove("modal-overlay-show");
-            });
-
-            var el = document.querySelectorAll(".catalog-item-buy")[4];
-            
-            var show = document.querySelector(".modal-content-buy");
-            var close = show.querySelector(".modal-content-close");
-            var goOn = show.querySelector(".modal-content-continue");
-            var overlay = document.querySelector(".modal-overlay");
-            
-            el.addEventListener("click", function(event) {
-                event.preventDefault();
-                show.classList.add("modal-content-buy-show");
-                overlay.classList.add("modal-overlay-show");
-            });
-            
-            close.addEventListener("click", function(event) {
-                event.preventDefault();
-                show.classList.remove("modal-content-buy-show");
-                overlay.classList.remove("modal-overlay-show");
-            });
-            
-            goOn.addEventListener("click", function(event) {
-                event.preventDefault();
-                show.classList.remove("modal-content-buy-show");
-                overlay.classList.remove("modal-overlay-show");
-            });
-
-            var el = document.querySelectorAll(".catalog-item-buy")[5];
-            
-            var show = document.querySelector(".modal-content-buy");
-            var close = show.querySelector(".modal-content-close");
-            var goOn = show.querySelector(".modal-content-continue");
-            var overlay = document.querySelector(".modal-overlay");
-            
-            el.addEventListener("click", function(event) {
-                event.preventDefault();
-                show.classList.add("modal-content-buy-show");
-                overlay.classList.add("modal-overlay-show");
-            });
-            
-            close.addEventListener("click", function(event) {
-                event.preventDefault();
-                show.classList.remove("modal-content-buy-show");
-                overlay.classList.remove("modal-overlay-show");
-            });
-            
-            goOn.addEventListener("click", function(event) {
-                event.preventDefault();
-                show.classList.remove("modal-content-buy-show");
-                overlay.classList.remove("modal-overlay-show");
-            });
-
-            var el = document.querySelectorAll(".catalog-item-buy")[6];
-            
-            var show = document.querySelector(".modal-content-buy");
-            var close = show.querySelector(".modal-content-close");
-            var goOn = show.querySelector(".modal-content-continue");
-            var overlay = document.querySelector(".modal-overlay");
-            
-            el.addEventListener("click", function(event) {
-                event.preventDefault();
-                show.classList.add("modal-content-buy-show");
-                overlay.classList.add("modal-overlay-show");
-            });
-            
-            close.addEventListener("click", function(event) {
-                event.preventDefault();
-                show.classList.remove("modal-content-buy-show");
-                overlay.classList.remove("modal-overlay-show");
-            });
-            
-            goOn.addEventListener("click", function(event) {
-                event.preventDefault();
-                show.classList.remove("modal-content-buy-show");
-                overlay.classList.remove("modal-overlay-show");
-            });
-
-            var el = document.querySelectorAll(".catalog-item-buy")[7];
-            
-            var show = document.querySelector(".modal-content-buy");
-            var close = show.querySelector(".modal-content-close");
-            var goOn = show.querySelector(".modal-content-continue");
-            var overlay = document.querySelector(".modal-overlay");
-            
-            el.addEventListener("click", function(event) {
-                event.preventDefault();
-                show.classList.add("modal-content-buy-show");
-                overlay.classList.add("modal-overlay-show");
-            });
-            
-            close.addEventListener("click", function(event) {
-                event.preventDefault();
-                show.classList.remove("modal-content-buy-show");
-                overlay.classList.remove("modal-overlay-show");
-            });
-            
-            goOn.addEventListener("click", function(event) {
-                event.preventDefault();
-                show.classList.remove("modal-content-buy-show");
-                overlay.classList.remove("modal-overlay-show");
-            });
-
-            var el = document.querySelectorAll(".catalog-item-buy")[8];
-            
-            var show = document.querySelector(".modal-content-buy");
-            var close = show.querySelector(".modal-content-close");
-            var goOn = show.querySelector(".modal-content-continue");
-            var overlay = document.querySelector(".modal-overlay");
-            
-            el.addEventListener("click", function(event) {
-                event.preventDefault();
-                show.classList.add("modal-content-buy-show");
-                overlay.classList.add("modal-overlay-show");
-            });
-            
-            close.addEventListener("click", function(event) {
-                event.preventDefault();
-                show.classList.remove("modal-content-buy-show");
-                overlay.classList.remove("modal-overlay-show");
-            });
-            
-            goOn.addEventListener("click", function(event) {
-                event.preventDefault();
-                show.classList.remove("modal-content-buy-show");
-                overlay.classList.remove("modal-overlay-show");
-            });
